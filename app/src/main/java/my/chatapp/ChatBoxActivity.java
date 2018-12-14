@@ -60,7 +60,7 @@ public class ChatBoxActivity extends AppCompatActivity {
         //setting up recyler
         MessageList = new ArrayList<>();
         myRecylerView = (RecyclerView) findViewById(R.id.messagelist);
-        LinearLayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
+        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
         myRecylerView.setLayoutManager(mLayoutManager);
         myRecylerView.setItemAnimator(new DefaultItemAnimator());
 
